@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran Siswa</title>
+  <link rel="icon" href="chuko2.jpeg">
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend><h1>Formulir Pendaftaran Siswa</h1></legend>
+      <tr>
+        <td>Nama Calon Siswa</td>
+        <td>:</td>
+        <td><input type="text" name="nama" id="nama" required> <br></td>
+      </tr>
+      <tr>
+        <td>Tempat/Tanggal Lahir</td>
+        <td>:</td>
+        <td><input type="name" name="tempat-lahir"> <input type="date" name="tanggal" id="tanggal" value="" min="" max=""><br></td>
+      </tr>
+      <tr>
+        <td>Agama</td>
+        <td>:</td>
+        <td><select value="agama">
+          <option name="konghucu" id="konghucu">Konghucu</option>
+          <option name="islam" id="islamI" selected>Islam</option>
+          <option name="kristen" id="kristen">Kristen</option>
+          <option name="hindu" id="hindu">Hindu</option>
+          <option name="bhuda" id="bhuda">Bhuda</option>
+        </select></td><br>
+      </tr>
+      <tr>
+        <td>Alamat</td>
+        <td>:</td>
+        <td><textarea name="alamat" id="alamat" cols="50" rows="10"></textarea></td><br>
+      </tr>
+      <tr>
+        <td>No. Telp/HP</td>
+        <td>:</td>
+        <td><input type="tel" name="telepon" id="telepon" pattern="(0)[0-9]{5,15}"></td>
+      </tr><br>
+      <tr>
+        <td>Jenis Kelamin</td>
+        <td>:</td>
+        <td>
+          <input type="radio" name="Kelamin" id="kelamin"> <label for="kelamin">Laki-Laki</label>
+          <input type="radio" name="kelamin" id="kelamin"> <label for="kelamin">Perempuan</label>
+        </td>
+      </tr><br>
+      <tr>
+        <td>Hobby</td>
+        <td>:</td>
+        <td><input type="checkbox" name="hobi" id="hobi"> <label for="hobbies">Membaca</label></td>
+        <td><input type="checkbox" name="hobi" id="hobi"> <label for="hobbies">Menulis</label></td>
+        <td><input type="checkbox" name="hobi" id="hobi"> <label for="hobbies">Olahraga</label></td>
+        <td><input type="checkbox" name="hobi" id="hobi"> <label for="hobbies">Menyanyi</label></td>
+      </tr><br>
+      <tr>
+        <td>Pas Foto</td>
+        <td>:</td>
+        <td><input type="file" name="pas-foto" id="pas-foto"></td>
+      </tr><br>
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+</body>
+</html>
